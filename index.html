@@ -19,12 +19,21 @@
             <h1><span><i class="fas fa-headphones-alt icon"></i></span> Amplify</h1>
         </div>
         <div class="nav-items">
-            <a href="#" class="nav-item">Premium</a>
-            <a href="#" class="nav-item">Help</a>
-            <a href="#" class="nav-item">Download</a>
+            <a href="#" class="nav-item premium">Premium</a>
+            <a href="#" class="nav-item support">Support</a>
+            <a href="#" class="nav-item download">Download</a>
             <p class="nav-item">|</p>
-            <a href="#" class="nav-item">Sign up</a>
-            <a href="#" class="nav-item">Log in</a>
+            <a href="#" class="nav-item signUp">Sign up</a>
+            <a href="#" class="nav-item logIn">Log in</a>
+            <a href="" class=" nav-item nav-icon"><h1><span><i class="fas fa-headphones-alt"></i></span> Amplify</h1></a>
+
+        </div>
+        <div class="toggle" onclick="toggleMenu()">
+            <div class="toggle-con" onclick="myFunction(this)">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+            </div>
         </div>
     </div>
     <!-- Navbar ends -->
@@ -45,7 +54,7 @@
 
 
     <!-- footer section -->
-    <div class="footer">
+    <!-- <div class="footer">
         <div class="footer-content">
             <div class="footer-logo">
                 <h1><span><i class="fas fa-headphones-alt footer-icon"></i></span> Amplify</h1>
@@ -91,9 +100,9 @@
                     </ul>
                 </div>
             </div>
-        </div>
+        </div> -->
         <!-- footer bottom -->
-        <div class="footer-bottom">
+        <!-- <div class="footer-bottom">
             <div class="country">
                 <p>NIG<span class="flag-icon flag-icon-ng"></span></p>
             </div>
@@ -108,10 +117,29 @@
                     <li class="bottom-list-item trademark">&#169; 2020 Amplify NG</li>
                 </ul>
             </div>
-        </div>
+        </div> -->
         <!-- footer bottom ends -->
         
     </div>
     <!-- footer ends -->
+
+    <script>
+        function toggleMenu() {
+            var toggle = document.querySelector('toggle');
+            var nav = document.querySelector('.nav-items')
+            var navLinks = document.querySelector('.nav-item')
+
+
+            nav.classList.toggle('nav-active');
+            document.body.classList.add('newBg');
+            // navLinks.forEach(link, index =>{
+            //     link.style.animation =
+            // });
+        }
+
+        function myFunction(x) {
+            x.classList.toggle("change");
+        }
+    </script>
 </body>
 </html>
