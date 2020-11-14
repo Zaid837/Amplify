@@ -7,6 +7,6 @@ Designed spotify's landing page using html css javascript. I also included respo
 *CSS
 *JavaScript/jQuery 3.1.1
 
-You can view my design [here] (https://zaid837.github.io/Amplify/)
+You can view my design [here](https://zaid837.github.io/Amplify/)
 
-![screenshot]()
+![screenshot](https://github.com/Zaid837/Amplify/blob/master/images/Screenshot%20(5).png)
